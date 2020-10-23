@@ -39,7 +39,7 @@ one_moves(State1,State2):-
     State2 = [A,B,C,_].
 
 %%recursively ensure every sequential 2 states are valid
-valid([[A,B,C,D]]).
+valid([[_,_,_,_]]).
 valid([X|Y]):-
     nth0(0, Y, Z),
     one_moves(X, Z),
